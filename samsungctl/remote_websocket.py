@@ -15,7 +15,7 @@ class RemoteWebsocket():
         if not config["port"]:
             config["port"] = 8001
 
-        URL_FORMAT = "ws://{}:{}/api/v2/channels/samsung.remote.control?name={}"
+        URL_FORMAT = "ws://{}:8001/api/v2/channels/samsung.remote.control?name={}"
 
         """Make a new connection."""
         self.connection = websocket.WebSocket()
