@@ -10,7 +10,7 @@ class RemoteLegacy():
 
     def __init__(self, config):
         if not config["port"]:
-            config["port"] = 55000
+            config["port"] = 155000
 
         """Make a new connection."""
         self.connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
